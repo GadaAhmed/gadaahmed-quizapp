@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Exo:ital,wght@1,600&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="first">
+            <h2>Quiz app</h2>
+            <h4 >The site is a game with questions, and each question has options,<br>
+                 one of the options is the correct option,
+                 and when 
+                 the correct answer increases a point</h4>
+            <h4>1. Enter Your Nmae.</h4>
+            <h4>2. Once You Select Your Answer.It Can't Be Undone.</h4>
+            <h4>3. You'll Get Points On The Basic Of Your Correct Answers.</h4>
+            <h4>4. You Can't Exit From The Quiz While You Are Playing.</h4>
+         
+
+         <div id="second">
+        <label >Name </label>
+        <input id="name" type="text" placeholder="Name">
+        <p class="error-name"></p>
+      
+        </div>
+       
+        <!--    Start Section     -->
+        <div id="start">Start</div>
+        <div id="leaderboard">leaderboard</div>
+
+
+
+    </div>
+
+
+
+
+        <!--    Quiz Section    -->
+        <div id="quiz">
+            <div id="quiz_header">
+               
+            </div>
+
+            <!--     Quiz Questions  -->
+
+            <div id="question">
+                <h2 id="questionNo">1/10</h2>
+              
+                <h2 id="questionText"></h2>
+            </div>
+
+            <!--       Quiz Choices   -->
+
+            <div id="optionList">
+                <h4 class="choice_que" id="option1"></h4>
+                <h4 class="choice_que" id="option2"></h4>
+                <h4 class="choice_que" id="option3"></h4>
+                <h4 class="choice_que" id="option4"></h4>
+            </div>
+
+           
+
+            <div id="answersSection">
+                <!--Next-->
+                <h3 id="next_question">Next</h3>
+            </div>
+
+
+
+            <!--Score-->
+            <div id="countSection">
+            
+                <div id="score_question"></div>
+            </div>
+
+
+
+         
+
+
+        </div>
+
+      <!--leaderboard-->
+   
+      <div id="LeaderBordScores" >
+      
+        <ol id="ScoresList"></ol>
+        
+      </div>
+
+
+        
+    
+    </div>
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

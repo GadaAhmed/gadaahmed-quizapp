@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Exo:ital,wght@1,600&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="first">
+            <h2> Welcome To Online QuizApp</h2>
+            <h4>1. You Have Only 20 Seconds For Each Questions.</h4>
+            <h4>2. Once You Select Your Answer.It Can't Be Undone.</h4>
+            <h4>3. You'll Get Points On The Basic Of Your Correct Answers.</h4>
+            <h4>4. You Can't Exit From The Quiz While You Are Playing.</h4>
+           
+          </div>
+          <input type="text" class="name" id="fname" placeholder="Your name..">
+        
+        <!--    Start Section     -->
+        <div id="start">Start</div>
+        <div id="leaderboard">leaderboard</div>
+
+        <!--    Quiz Section    -->
+        <div id="quiz">
+            <div id="quiz_header">
+            </div>
+            
+            <!--     Quiz Questions  -->
+            <div id="question">
+                <h2 id="questionNo"></h2>
+                <h2 id="questionText"></h2>
+            </div>
+            <!--       Quiz Choices   -->
+
+            <div id="optionList">
+                <h4 class="choice_que" id="option1"></h4>
+                <h4 class="choice_que" id="option2"></h4>
+                <h4 class="choice_que" id="option3"></h4>
+                <h4 class="choice_que" id="option4"></h4>
+            </div>
+
+            <!--  Answers Section-->
+
+            <div id="answersSection">
+                <h3 id="next_question">Next</h3>
+            </div>
+        </div>
+    
+    </div>
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
